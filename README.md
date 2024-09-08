@@ -60,16 +60,35 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ## Folder Structure
 
-```
+```markdown
+
 ecommerce-website/
+├── api/                 # Folder for local JSON API
+│   └── products.json    # JSON file containing product data
+├── node_modules/        # Node.js modules (generated after npm install)
 ├── public/              # Public folder for assets
-├── src/                 # Source folder for HTML, CSS, and JS files
-│   ├── api/             # Local JSON API for product data
-│   ├── components/      # JavaScript components
-│   ├── styles/          # CSS stylesheets
-│   └── index.html       # Main HTML file
+│   └── images/          # Folder for storing images
+├── .gitignore           # Git ignore file
+├── about.html           # About page
+├── addToCart.html       # Add to Cart page
+├── addToCart.js         # JavaScript for Add to Cart functionality
+├── contact.html         # Contact page
+├── fetchQuantityFromCartLS.js  # JS to fetch quantity from local storage
+├── getCartProducts.js   # JS to get products in the cart
+├── homeProductsCards.js # JS for displaying home product cards
+├── homeQuantityToggle.js # JS for toggling quantity on the home page
+├── incrementDecrement.js # JS for increment and decrement functionality
+├── index.html           # Main HTML file
+├── main.js              # Main JavaScript file
+├── package-lock.json    # Lock file for npm dependencies
 ├── package.json         # Project configuration and scripts
-└── README.md            # Project README file
+├── products.html        # Products page
+├── removeProdFromCart.js # JS for removing products from the cart
+├── showAddToCartCards.js # JS for showing cards on the add-to-cart page
+├── showToast.js         # JS for showing toast notifications
+├── style.css            # Main stylesheet
+├── updateCartProductTotal.js # JS to update total for products in cart
+└── updateCartValue.js   # JS to update cart value
 ```
 
 ## Contributing
